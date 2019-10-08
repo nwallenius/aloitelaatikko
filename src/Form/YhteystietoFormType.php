@@ -15,7 +15,7 @@ class YhteystietoFormType extends AbstractType{
     public function buildForm(FormBuilderInterface $builder, array $options){
         $builder
             ->add('nimi', TextType::class, ['label' => 'Etu- ja sukunimi']) 
-            ->add('email', EmailType::class, ['label' => 'Sähköpostiosoite'])
+            ->add('email', EmailType::class, ['label' => 'Sahkopostiosoite'])
             ->add('kommentti', TextType::class, ['label' => 'Kommentti'])
             ->add('save', SubmitType::class, [
                 'label' => 'Talleta',

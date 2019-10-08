@@ -28,7 +28,7 @@
         <td>{{ aloite.email }}</td>
         <td>
            <a href="#" class="btn btn-success">Muokkaa</a>
-           <button class="btn btn-danger">Poista</button>        
+           <button poista-aloite="{{ aloite.id }}" class="btn btn-danger poista-aloite">Poista</button>        
         </td>
         </tr>               
     </tbody>    
@@ -38,5 +38,5 @@
 
  {% block javascripts %}
     {{ parent() }}
-    <script src="js/main.js"></script>
-{% endblock %}
+        <script src="../../js/main.js"></script>
+ {% endblock %}

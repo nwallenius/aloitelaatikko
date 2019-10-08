@@ -123,7 +123,7 @@ class AloiteController extends AbstractController {
   
           return $this->redirectToRoute('aloite_lista');
   
-         //return $this->render('aloite/poista.html.twig');
+         // return $this->render('aloite/poista.html.twig');
       }
 
 }
