@@ -13,13 +13,12 @@
 
         public function buildForm(FormBuilderInterface $builder, array $options){
             $builder
-                ->add('Aloite', TextType::class, ['label' => 'Aloite'])
-                ->add('Aihe', TextType::class, ['label' => 'Aihe'])
-                ->add('Kuvaus', TextType::class, ['label' => 'Kuvaus'])
-                ->add('Kirjauspaiva', TextType::class, ['label' => 'Kirjauspaiva'])
-                ->add('Etunimi', TextType::class, ['label' => 'Etunimi'])
-                ->add('Sukunimi', TextType::class, ['label' => 'Sukunimi'])
-                ->add('Email', TextType::class, ['label' => 'Email'])
+                ->add('aihe', TextType::class, ['label' => 'Aihe'])
+                ->add('kuvaus', TextType::class, ['label' => 'Kuvaus'])
+                ->add('kirjauspaiva', TextType::class, ['label' => 'Kirjauspaiva'])
+                ->add('etunimi', TextType::class, ['label' => 'Etunimi'])
+                ->add('sukunimi', TextType::class, ['label' => 'Sukunimi'])
+                ->add('email', TextType::class, ['label' => 'Email'])
                 ->add('save', SubmitType::class, [
                     'label' => 'Talleta',
                     'attr' => ['class' => 'btn btn-info']
