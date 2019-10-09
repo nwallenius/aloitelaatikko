@@ -13,15 +13,15 @@
 
         public function buildForm(FormBuilderInterface $builder, array $options){
             $builder
-                ->add('aihe', TextType::class, ['label' => 'Aihe'])
-                ->add('kuvaus', TextType::class, ['label' => 'Kuvaus'])
-                ->add('kirjauspaiva', TextType::class, ['label' => 'Kirjauspaiva'])
-                ->add('etunimi', TextType::class, ['label' => 'Etunimi'])
-                ->add('sukunimi', TextType::class, ['label' => 'Sukunimi'])
-                ->add('email', TextType::class, ['label' => 'Email'])
+                ->add('aihe', TextType::class, ['label' => 'Aihe', 'attr' => ['class' => 'form-control']])
+                ->add('kuvaus', TextType::class, ['label' => 'Kuvaus', 'attr' => ['class' => 'form-control']])
+                ->add('kirjauspaiva', TextType::class, ['label' => 'Kirjauspaiva', 'attr' => ['class' => 'form-control']])
+                ->add('etunimi', TextType::class, ['label' => 'Etunimi', 'attr' => ['class' => 'form-control']])
+                ->add('sukunimi', TextType::class, ['label' => 'Sukunimi', 'attr' => ['class' => 'form-control']])
+                ->add('email', TextType::class, ['label' => 'Email', 'attr' => ['class' => 'form-control']])
                 ->add('save', SubmitType::class, [
                     'label' => 'Talleta',
-                    'attr' => ['class' => 'btn btn-info']
+                    'attr' => ['class' => 'talleta btn btn-lg btn-warning btn-block']
                 ]);
         }
 
